@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Webpage</h1>
+    <nav>
+      <a href="#form">Form</a>
+      <a href="#features">Features</a>
+    </nav>
+  </header>
+
+  <!-- Form Section -->
+  <section id="form">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Interactive Features -->
+  <section id="features">
+    <h2>Interactive Features</h2>
+
+    <!-- Feature 1: Dark Mode Toggle -->
+    <button id="toggleTheme">Toggle Dark Mode</button>
+
+    <!-- Feature 2: Click Counter -->
+    <div>
+      <p>You have clicked the button <span id="clickCount">0</span> times.</p>
+      <button id="clickBtn">Click Me!</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
